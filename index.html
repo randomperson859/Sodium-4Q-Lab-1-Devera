@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Webpage</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Lexter Devera">
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="check" action="checkout.html" onsubmit="return userShop()">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <br><br>
+
+        <div>
+        <label for="grocery">Grocery Items:</label>
+        <input type="radio" name="grocery1" id="grocery1">
+        <label for="grocery1">Meat Products</label>
+        <br>
+
+        <input type="radio" name="grocery2" id="grocery2">
+        <label for="grocery2">Fruits & Vegetable Products</label>
+        </div>
+
+        <br><br>
+
+        <label for="money">Money Balance</label>
+        <input type="number" name="money" id="money" required min="0" max="10000" step="0.01">
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script src="index.js"></script>
+    </body>
+</html>
